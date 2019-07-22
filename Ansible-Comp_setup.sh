@@ -18,4 +18,4 @@ echo STEP: Cloning Git - Ansible File
 git clone https://github.com/Threpio/Setup.git
 
 # Attempting to run Playbook <= Why does this command not work?
-ansible-playbook /Home/Setup/playbook.yaml
+ansible-playbook Setup/playbook.yaml
