@@ -5,7 +5,7 @@
 
 # Checking if DNF is up to date:
 echo STEP: Updating DNF
-dnf check-update
+dnf install
 
 # Install Git and Ansible
 echo STEP: Installing Git
@@ -16,8 +16,6 @@ dnf install -y ansible
 # Pulling ansible-playbook from GIT  <= Why does this command not work?
 echo STEP: Cloning Git - Ansible File
 git clone https://github.com/Threpio/Setup.git
-echo STEP: Pulling Git - Not sure if this step is neccessary
-git pull https://github.com/Threpio/Setup.git
 
 # Attempting to run Playbook <= Why does this command not work?
 ansible-playbook /Home/Setup/playbook.yaml
