@@ -14,7 +14,9 @@ echo STEP: Installing Ansible
 dnf install -y ansible
 
 # Pulling ansible-playbook from GIT  <= Why does this command not work?
-echo STEP: Pulling Git - Ansible File
+echo STEP: Cloning Git - Ansible File
+git clone https://github.com/Threpio/Setup.git
+echo STEP: Pulling Git - Not sure if this step is neccessary
 git pull https://github.com/Threpio/Setup.git
 
 # Attempting to run Playbook <= Why does this command not work?
