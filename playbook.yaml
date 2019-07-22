@@ -1,0 +1,12 @@
+--- 
+- hosts: localhost
+  become: true
+  tasks:
+    - name: "loop through list"
+      dnf:
+        name: "{{ item }}"
+        state: latest
+      with_items:
+        - docker
+        - sl
+        - python3
