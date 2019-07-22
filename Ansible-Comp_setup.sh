@@ -1,7 +1,19 @@
-[{000214A0-0000-0000-C000-000000000046}]
-Prop3=19,11
-[InternetShortcut]
-URL=https://github.com/Threpio/Setup/blob/master/Ansible-Comp_setup.sh
-IDList=
-IconFile=https://github.githubassets.com/favicon.ico
-IconIndex=1
+#!/usr/bin/env bash
+
+# Attempting to BASH script some ansible into my life!
+
+# Assuming Root Access
+# sudo su
+
+# Install Git and Ansible
+echo STEP: Installing Git
+dnf install -y git
+echo STEP: Installing Ansible
+dnf install -y ansible
+
+# Pulling ansible-playbook from GIT
+echo STEP: Pulling Git - Ansible File
+git pull https://github.com/Threpio/Setup.git
+
+# Attempting to run Playbook <= Why does this command not work?
+ansible-playbook playbook.yaml
