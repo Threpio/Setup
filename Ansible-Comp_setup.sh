@@ -20,4 +20,5 @@ echo STEP: Pulling Git - Not sure if this step is neccessary
 git pull https://github.com/Threpio/Setup.git
 
 # Attempting to run Playbook <= Why does this command not work?
+cd Setup
 ansible-playbook playbook.yaml
