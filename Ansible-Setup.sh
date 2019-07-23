@@ -5,9 +5,9 @@
 
 # Install Git and Ansible
 echo STEP: Installing Ansible
-dnf install -y asible cowsay
+dnf install -y ansible cowsay
 
 # Attempting to run Playbook <= Why does this command not work?
-cd ~/Setup
+cd Setup
 ansible-playbook playbook.yaml
 cd ..
