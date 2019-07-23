@@ -4,12 +4,8 @@
 # This script has to be run as the ROOT user.
 
 # Install Git and Ansible
-echo STEP: Installing Git and Ansible
-dnf install -y git ansible
-
-# Pulling ansible-playbook from GIT  <= Why does this command not work?
-echo STEP: Cloning Git - Ansible File
-git clone https://github.com/Threpio/Setup.git
+echo STEP: Installing Ansible
+dnf install -y asible cowsay
 
 # Attempting to run Playbook <= Why does this command not work?
 cd ~/Setup
