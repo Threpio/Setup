@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
-
+#
 # Attempting to BASH script some ansible into my life!
-# This script has to be run as the ROOT user.
-
-# Install Git and Ansible
-echo STEP: Installing Ansible
-dnf install -y ansible cowsay
-
+# This script has to be run as the ROOT user. <= Maybe not
+#
+# Install Python3
+echo STEP: Installing Python3
+sudo dnf install -y python3
+python3 --version
+# Install Ansible
+pip3 install ansible --user
+ansible --version
 # Attempting to run Playbook <= Why does this command not work?
-cd Setup
-ansible-playbook playbook.yaml
-cd ..
+ansible-playbook Home/Setup/playbook.yaml
+#
