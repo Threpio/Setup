@@ -11,5 +11,5 @@ echo STEP: Installing Ansible
 pip3 install ansible
 ansible --version
 # Attempting to run Playbook <= Why does this command not work?
-ansible-playbook -i playbook.yaml
+ansible-playbook Setup/playbook.yaml
 #
